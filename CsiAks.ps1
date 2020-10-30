@@ -30,4 +30,5 @@ function New-CsiAksApplicationDeployment
     kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/azurefile-csi-driver/master/deploy/example/pvc-azurefile-csi.yaml
     kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/azurefile-csi-driver/master/deploy/example/nginx-pod-azurefile.yaml
     
+    kubectl exec nginx-azurefile -- ls -l /mnt/azurefile
 }
